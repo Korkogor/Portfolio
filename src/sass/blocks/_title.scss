@@ -23,4 +23,17 @@
     &_fz24 {
         font-size: 24px;
     }
+    &__section-title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__section-subtitle {
+        text-align: center;
+    }
 }
