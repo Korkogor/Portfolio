@@ -5,6 +5,12 @@
     .sidepanel {
         display: none;
     }
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2,400px);
+            column-gap: 100px;
+        }
+    }
 }
 
 @media (max-width: 1200px) {
@@ -25,6 +31,13 @@
             }
         }
     }
+
+    .resume {
+        &__wrapper {
+            justify-content: space-around;
+        }
+    }
+
 }
 
 @media (max-width: 992px) {
@@ -47,6 +60,13 @@
                 grid-template-columns: 40px 320px;
                 column-gap: 20px;
             }
+        }
+    }
+    .resume {
+        &__wrapper {
+            justify-content: space-around;
+            grid-template-columns: repeat(2,300px);
+            column-gap: 60px;
         }
     }
 }
@@ -76,10 +96,21 @@
         }
         &__skills {
             grid-template-columns: repeat(2, 260px);
+            justify-items: center;
+            
             &-item {
                 grid-template-columns: 40px 200px;
                 column-gap: 20px;
             }
+        }
+    }
+    
+    .resume {
+        padding-top: 60px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            column-gap: 60px;
+            padding-top: 30px;
         }
     }
 }
@@ -120,4 +151,11 @@
             grid-template-columns: 1fr;
         }
     }
+
+    .resume {
+        &__wrapper {
+            padding: 0;
+        }
+    }
+
 }
