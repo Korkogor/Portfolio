@@ -49,6 +49,12 @@
             grid-template-columns: repeat(3,270px);
             justify-content: center;
         }
+        &__ratings {
+            grid-template-columns: repeat(auto-fit, 350px);
+            grid-auto-rows: minmax(70px, auto);
+            justify-content: space-between;
+            padding: 0 30px;
+        }
     }
 
 }
@@ -86,6 +92,15 @@
     .skills {
         &__wrapper {
             grid-template-columns: repeat(2,270px);
+        }
+        &__ratings {
+            grid-template-columns: repeat(auto-fit, 320px);
+            justify-content: space-between;
+            padding: 0;
+            column-gap: 0;
+            &-line {
+                width: 100%;
+            }
         }
     }
 }
@@ -130,6 +145,17 @@
             grid-template-columns: 1fr;
             column-gap: 60px;
             padding-top: 30px;
+        }
+    }
+    .skills {
+        &__ratings {
+            grid-template-columns: repeat(auto-fit, 320px);
+            grid-auto-rows: minmax(70px, auto);
+            justify-content: center;
+            margin-top: 40px;
+            &-line {
+                width: 100%;
+            }
         }
     }
 }
@@ -180,6 +206,9 @@
     .skills {
         &__wrapper {
             grid-template-columns: 270px;
+        }
+        &__ratings {
+            grid-template-columns: repeat(auto-fit, 300px);
         }
     }
 
